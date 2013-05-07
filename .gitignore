@@ -1,3 +1,5 @@
 *.db
+payload.RData
 .cache/
+cache/
 
