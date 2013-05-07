@@ -3,19 +3,6 @@
 <head>
   {{> head }}
   {{{ page.stylesheets }}}
-</head>
-<body>
-  {{# page.navbar }}{{> navbar }}{{/ page.navbar }}
-  <div class="reveal">
-    <div class="slides">
-      {{{ page.content }}}
-    </div>
-  </div>
-</body>
-  <script src="{{page.url.framework}}/lib/js/head.min.js"></script>
-  <script src="{{page.url.framework}}/js/reveal.min.js"></script>
-  {{> initialize }}
-  {{> javascripts }}
 
   <!-- mathjax config similar to math.stackexchange -->
 
@@ -46,6 +33,22 @@
         }
     });
 </script>
+
+</head>
+<body>
+  {{# page.navbar }}{{> navbar }}{{/ page.navbar }}
+  <div class="reveal">
+    <div class="slides">
+      {{{ page.content }}}
+    </div>
+  </div>
+</body>
+  <script src="{{page.url.framework}}/lib/js/head.min.js"></script>
+  <script src="{{page.url.framework}}/js/reveal.min.js"></script>
+  {{> initialize }}
+  {{> javascripts }}
+
+  
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
