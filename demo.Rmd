@@ -5,12 +5,29 @@ mode : selfcontained
 framework: revealjs
 hitheme : zenburn
 revealjs:
-  theme: moon
-  transition: cube
+  theme: solarized
+  transition: none
   center: "true"
 url: {lib: "."}
 bootstrap:
   theme: amelia
+navbar:
+  title: Slidify
+  items: 
+    - {item: Home, href: index,  icon: home}
+    - {item: "Start", href: start, icon: signin}
+    - {item: Author, href: about, icon: pencil}
+    - {item: Style, href: style, icon: hand-right, class: dropdown, 
+        dropdown: true, menu: [
+         {item: io2012, href: 'samples/intro'},
+         {item: deck.js, href: 'samples/deck.js'},
+         {item: shower, href: 'samples/shower'},
+         {item: landslide, href: 'samples/landslide'}
+        ]
+      }
+    - {item: Customize, href: customize, icon: gift}
+    - {item: Extend, href: extend, icon: cogs}
+    - {item: Publish, href: publish, icon: github}
 ---
 
 # Reveal.js
@@ -30,7 +47,7 @@ Some notes on the first slide
 
 reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with support for CSS 3D transforms to see it in its full glory.
 
-
+<section>
 
 ---
 
@@ -40,7 +57,7 @@ reveal.js is a framework for easily creating beautiful presentations using HTML.
 
 ## Slide 2
 
-
+</section>
 
 --- &vertical
 
@@ -352,4 +369,3 @@ This is slide 1
 ## Slide 2
 
 <iframe src='http://www.statdistributions.com' width = '960px' height = '600px'></iframe>
-

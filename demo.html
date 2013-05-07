@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/2.3.1/amelia/bootstrap.min.css">
 <link rel="stylesheet" href="./frameworks/revealjs/css/reveal.min.css">
-  <link rel="stylesheet" href="./frameworks/revealjs/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="./frameworks/revealjs/css/theme/solarized.css" id="theme">
   <link rel="stylesheet" href="./highlighters/highlight.js/css/zenburn.css" id="theme">
   <!--[if lt IE 9]>
   <script src="lib/js/html5shiv.js"></script>
@@ -17,7 +17,101 @@
 
 </head>
 <body>
-  
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">
+              <!-- <img src='assets/img/slidify_logo.png' width='100px' /> -->
+              Slidify
+            </a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="">
+                      <a href="index.html" >
+                        <i class="icon-home"> </i>
+                        Home
+                        
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="start.html" >
+                        <i class="icon-signin"> </i>
+                        Start
+                        
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="about.html" >
+                        <i class="icon-pencil"> </i>
+                        Author
+                        
+                      </a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="style.html" class="dropdown-toggle"
+                        data-toggle="dropdown">
+                        <i class="icon-hand-right"> </i>
+                        Style
+                        <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                      	  <li>
+                      	    <a href="samples/intro.html">
+                      	     <i class="icon-hand-right"> </i>
+                      	     io2012
+                      	    </a>
+                      	  </li>
+                      	  <li>
+                      	    <a href="samples/deck.js.html">
+                      	     <i class="icon-hand-right"> </i>
+                      	     deck.js
+                      	    </a>
+                      	  </li>
+                      	  <li>
+                      	    <a href="samples/shower.html">
+                      	     <i class="icon-hand-right"> </i>
+                      	     shower
+                      	    </a>
+                      	  </li>
+                      	  <li>
+                      	    <a href="samples/landslide.html">
+                      	     <i class="icon-hand-right"> </i>
+                      	     landslide
+                      	    </a>
+                      	  </li>
+                      </ul>
+                    </li>
+                    <li class="">
+                      <a href="customize.html" >
+                        <i class="icon-gift"> </i>
+                        Customize
+                        
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="extend.html" >
+                        <i class="icon-cogs"> </i>
+                        Extend
+                        
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="publish.html" >
+                        <i class="icon-github"> </i>
+                        Publish
+                        
+                      </a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
   <div class="reveal">
     <div class="slides">
       <section class='' data-state='' id='slide-1'>
@@ -37,6 +131,8 @@
   <h2>Heads Up</h2>
   <p>reveal.js is a framework for easily creating beautiful presentations using HTML. You&#39;ll need a browser with support for CSS 3D transforms to see it in its full glory.</p>
 
+<p><section></p>
+
 </section>
 <section class='' data-state='' id='slide-3'>
   <h2>Slide 1</h2>
@@ -44,7 +140,8 @@
 </section>
 <section class='' data-state='' id='slide-4'>
   <h2>Slide 2</h2>
-  
+  <p></section></p>
+
 </section>
 <section>
    <section class='' data-state=''>
@@ -422,8 +519,8 @@ qplot(wt, mpg, data = mtcars)
     progress: true,
     history: true,
     center: true,
-    theme: Reveal.getQueryHash().theme || 'moon', 
-    transition: Reveal.getQueryHash().transition || 'cube', 
+    theme: Reveal.getQueryHash().theme || 'solarized', 
+    transition: Reveal.getQueryHash().transition || 'none', 
     dependencies: [
     // Cross-browser shim that fully implements classList -
     // https://github.com/eligrey/classList.js/
@@ -441,5 +538,38 @@ qplot(wt, mpg, data = mtcars)
 <script>hljs.initHighlightingOnLoad();</script>
 <!-- DONE LOADING HIGHLIGHTER JS FILES -->
  
+
+
+  <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 </html>

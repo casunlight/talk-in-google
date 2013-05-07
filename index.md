@@ -13,8 +13,8 @@ bootstrap:
   theme: amelia
 ---
 
-# 漫谈统计分析
 
+# 漫谈统计分析
 
 <small> [陈堰平](http://weibo.com/rucypchen) </small>
 
@@ -51,15 +51,14 @@ bootstrap:
 
 *** 
 
-## 方法要与数据类型对应：回归分析
+## 方法要与数据类型对应
 
-$g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
+- 回归分析： $g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
 
-- 线性回归
+- y为连续变量 &rarr; 普通线性回归
 - 广义线性模型
-    * Logistic回归  y为0-1变量、定序变量、分类变量
-    * 泊松回归  y为计数变量
-
+    * y为0-1变量、定序变量、分类变量 &rarr; Logistic回归
+    * y为计数变量 &rarr; 泊松回归
 
 *** 
 
@@ -71,6 +70,7 @@ $g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
 
 ![](./figure/fgw.jpg)
 
+[查看原文](http://goo.gl/vWJ4T)
 
 --- &vertical
 
@@ -114,11 +114,11 @@ $g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
 
 ## 案例：聚类问题
 
-![](./figure/cluster1.png)
+![](./figure/cluster1.jpg)
 
 ***
 
-## 案例：文本挖掘
+## 案例：文本挖掘（1）
 
 <img src="./figure/weibo1.png" class="fragment" alt="weibo1">
 <img src="./figure/weibo2.png" class="fragment" alt="weibo1">
@@ -128,11 +128,9 @@ $g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
 
 ## 案例：文本挖掘（2）
 
+针对22996首中文歌曲（844个流行歌手）的[歌词分析](http://www.bjt.name/2012/02/love-always-lonely/)
+
 ![](./figure/lovesong.png)
-
-针对22996首中文歌曲（844个流行歌手）的歌词分析
-
-[爱情永远寂寞](http://www.bjt.name/2012/02/love-always-lonely/)
 
 --- &vertical
 
@@ -173,6 +171,62 @@ $g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
 
 ![](./figure/r.jpg)
 
+***
+
+## 用R做图
+
+
+```r
+library(ggplot2)
+qplot(wt, mpg, data = mtcars)
+```
+
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
+
+
+***
+
+## 基础绘图案例
+
+
+```r
+# Scatterplot
+x <- c(0.5, 2, 4, 8, 12, 16)
+y1 <- c(1, 1.3, 1.9, 3.4, 3.9, 4.8)
+y2 <- c(4, 0.8, 0.5, 0.45, 0.4, 0.3)
+```
+
+![](assets/fig/unnamed-chunk-3.jpeg) 
+
+
+*** 
+
+## 直方图
+
+
+```r
+Y <- rnorm(50)
+```
+
+
+![](assets/fig/unnamed-chunk-5.jpeg) 
+
+
+***
+
+## 可视化案例
+
+- [气泡图](http://player.opengg.me/loader.swf?VideoIDS=XNDk4MjYyMTUy)
+
+
+
+***
+
+## 大航海时代
+
+<img src="http://i.imgur.com/CiY3K.png" style="background-color:#F7F7F7">
+
+[查看原文](http://yihui.name/en/2012/04/fancy-html5-slides-with-knitr-and-pandoc/)
 
 *** 
 
