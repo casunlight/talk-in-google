@@ -120,21 +120,21 @@ bootstrap:
 
 ## 案例：文本挖掘（1）
 
-<img src="./figure/weibo1.png" class="fragment" alt="weibo1">
+<img src="./figure/weibo1.png"  alt="weibo1">
 <img src="./figure/weibo2.png" class="fragment" alt="weibo1">
 <img src="./figure/weibo3.png" class="fragment" alt="weibo1">
 
 ***
 
-## 案例：文本挖掘（2）
+## 
 
 针对22996首中文歌曲（844个流行歌手）的[歌词分析](http://www.bjt.name/2012/02/love-always-lonely/)
 
 ![](./figure/lovesong.png)
 
---- &vertical
+--- ds:soothe &vertical
 
-## 常用统计工具软件介绍
+## 常用统计工具软件介绍 
 
 ***
 
@@ -250,6 +250,11 @@ Y <- rnorm(50)
 
 ## 穿马甲的R（1）：Rcmdr
 
+```r
+install.packages("Rcmdr")
+library(Rcmdr)
+```
+
 ![](./figure/rcmdr.png)
 
 *** 
@@ -270,17 +275,16 @@ Y <- rnorm(50)
 
 <small><a href="http://www.bjt.name/2012/05/2012-datamining-software/">2012年第13期KDnuggets关于数据挖掘软件的调查</a></small>
 
---- &vertical 
+--- ds:indigo &vertical
 
 ## 统计学习资源介绍
 
-- [统计之都](http://cos.name)
-- [炼数成金](http://www.dataguru.cn)
-
 *** 
 
-## 推荐资料
+## 
 
+- [统计之都](http://cos.name)
+- [炼数成金](http://www.dataguru.cn)
 - 统计学：从数据到结论
 - 数据之美
 - New Internet：大数据挖掘
