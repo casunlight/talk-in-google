@@ -14,7 +14,7 @@ bootstrap:
 ---
 
 # 漫谈统计分析
-### 访问Google
+
 
 <small> [陈堰平](http://weibo.com/rucypchen) </small>
 
@@ -25,25 +25,56 @@ bootstrap:
 
 ## 统计与数据挖掘
 
-
-
+- 统计分析
+    * EDA（探索性数据分析）
+    * CDA（验证性数据分析）
+- 机器学习
+- 数据挖掘
+- 商务智能
 
 --- &vertical
 
 ## 常用统计方法
 
+- 描述统计
+- 回归分析
+- 判别分析
+- 聚类分析
+- ……
+
+
 *** 
 
-## 关于数据
+## 数据类型
+
+![](./figure/datatype.png)
+
+*** 
+
+## 方法要与数据类型对应：回归分析
+
+$g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
+
+- 线性回归
+- 广义线性模型
+    * Logistic回归  y为0-1变量、定序变量、分类变量
+    * 泊松回归  y为计数变量
+
 
 *** 
 
 ## 描述统计
 
+*** 
+
+## 案例：发改委打的飞机？
+
+![](./figure/fgw.jpg)
+
 
 --- &vertical
 
-## 数据挖掘
+## 机器学习
 
 ***  
 
@@ -57,9 +88,9 @@ bootstrap:
 
 ![](./figure/usl.png)
 
-***  
+--- &vertical
 
-## 数据挖掘的应用
+## 数据挖掘
 
 - 精准广告、直效行销（Direct Marketing）
 - 银行业：信用卡评分、客户关系管理（CRM）
@@ -69,11 +100,39 @@ bootstrap:
 
 ***
 
-## 案例一
+## 案例：购物篮分析 - 关联规则
+
+啤酒与尿布的故事
+
+***
+
+## 案例：决策树 - 分类问题
+
+![](./figure/ctree.png)
+
+***
+
+## 案例：聚类问题
+
+![](./figure/cluster1.png)
+
+***
+
+## 案例：文本挖掘
 
 <img src="./figure/weibo1.png" class="fragment" alt="weibo1">
 <img src="./figure/weibo2.png" class="fragment" alt="weibo1">
 <img src="./figure/weibo3.png" class="fragment" alt="weibo1">
+
+***
+
+## 案例：文本挖掘（2）
+
+![](./figure/lovesong.png)
+
+针对22996首中文歌曲（844个流行歌手）的歌词分析
+
+[爱情永远寂寞](http://www.bjt.name/2012/02/love-always-lonely/)
 
 --- &vertical
 
@@ -92,6 +151,14 @@ bootstrap:
 ## SPSS
 
 ![](./figure/spss.jpg)
+
+***
+
+## PSPP
+
+![](./figure/pspp.jpg)
+
+山寨版的SPSS，[开源的](http://www.gnu.org/software/pspp/)
 
 *** 
 
@@ -124,6 +191,18 @@ bootstrap:
 ## R的IDE：Notepad++ & NppToR
 
 ![](./figure/npp.png)
+
+*** 
+
+## 穿马甲的R（1）：Rcmdr
+
+![](./figure/rcmdr.png)
+
+*** 
+
+## 穿马甲的R（2）：rattle
+
+![](./figure/rattle.png)
 
 *** 
 
