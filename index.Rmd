@@ -230,6 +230,17 @@ lines(x, dnorm(x), lwd=2)
 par(mar=c(5.1, 4.1, 4.1, 2.1))
 ```
 
+*** 
+
+## 动画图
+
+```r
+library(animation)
+example(animation)
+```
+
+![](./figure/bm_demo.gif)
+
 ***
 
 ## 可视化案例
