@@ -53,7 +53,7 @@ bootstrap:
 
 ## 方法要与数据类型对应
 
-- 回归分析： $g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k}$
+- 回归分析： \[ g(y)=\beta_{0}+\beta_{1}x_{1}+...+\beta_{k}x_{k} \]
 
 - y为连续变量 &rarr; 普通线性回归
 - 广义线性模型
@@ -211,6 +211,17 @@ Y <- rnorm(50)
 
 ![](assets/fig/unnamed-chunk-5.jpeg) 
 
+
+*** 
+
+## 动画图
+
+```r
+library(animation)
+example(animation)
+```
+
+![](./figure/bm_demo.gif)
 
 ***
 
